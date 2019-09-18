@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.con {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+img {
+    vertical-align: top;
+    border: 0 none;
+}
+
+/************************ ---************************ */
+.footer {
+    float: left;
+    width: 100%;
+    height: 200px;
+    background: url(http://photo.no5.com.cn/page_2014/images/f_03.jpg) repeat-x;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.footer .f-cont {
+    margin: 25px auto;
+}
+
+.footer .f-cont .f-info {
+    float: left;
+    width: 284px;
+    padding-left: 44px;
+}
+
+.footer .f-cont .f-info .tel {
+    background: url(http://photo.no5.com.cn/page_2014/images/detail.gif?v=20140610) no-repeat 0 -157px;
+    height: 49px;
+    width: 197px;
+}
+
+.footer .f-cont .f-info .tel .num {
+    color: #ff1a3a;
+    font-family: Arial;
+    padding-left: 72px;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 8px;
+}
+
+.footer .f-cont .f-info .tel .time {
+    color: #444;
+    text-align: right;
+    width: 197px;
+}
+
+.footer .f-cont .f-info .weibo {
+    background: url(http://photo.no5.com.cn/page_2014/images/w.jpg) no-repeat;
+    width: 197px;
+    height: 22px;
+    line-height: 22px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: microsoft yahei;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.footer .f-cont .f-info .weibo a {
+    margin-left: 6px;
+}
+
+.footer .f-cont .f-info .ding {
+    margin-top: 10px;
+}
+
+.footer .f-cont .f-info .ding input {
+    width: 132px;
+    height: 24px;
+    line-height: 24px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    color: #666;
+    padding-left: 4px;
+    font-size: 12px;
+    outline: 0 none;
+}
+
+.footer .f-cont .f-info .ps {
+    color: #9b9b9b;
+    line-height: 22px;
+    padding-left: 3px;
+}
+
+.footer .f-cont .howto {
+    float: left;
+    width: 126px;
+    padding-left: 25px;
+    border-left: 1px solid #e1e1e1;
+    height: 150px;
+}
+
+.footer .f-cont .howto dt {
+    margin-bottom: 14px;
+}
+
+.footer .f-cont .howto dt a {
+    font-size: 16px;
+    color: #444;
+    font-family: microsoft yahei;
+}
+
+.footer .f-cont .howto dd a {
+    height: 22px;
+    line-height: 22px;
+    color: #999;
+}
+
+.footer .f-cont .lastdl {
+    border-right: 1px solid #e1e1e1;
+}
+
+.footer .f-cont .wei {
+    padding-top: 11px;
+    padding-left: 33px;
+    float: left;
+    background: url(http://photo.no5.com.cn/page_2014/images/ss.jpg) no-repeat 30px 104px;
+    width: 125px;
+    height: 150px;
+}
+
+.footer .f-cont .wei img {
+    border: 1px solid #e1e1e1;
+}
+
+/**************** foot-bottom*********** */
+.foot-bottom {
+    width: 1200px;
+    border-bottom: 1px solid #ccc;
+    height: 130px;
+    clear: both;
+    margin: 0 auto;
+    padding: 0 160px 0 160px;
+}
+
+.foot-bottom .fb {
+    width: 140px;
+    height: 110px;
+    float: left;
+    margin: 0 40px;
+}
+
+.foot-bottom .fb dt {
+    width: 108px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-left: 16px;
+}
+
+.foot-bottom .fb dd {
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
+    font-size: 13px;
+    color: #444;
+    font-family: microsoft yahei;
+}
+
+.beian {
+    text-align: center;
+    line-height: 44px;
+    height: 44px;
+    font-size: 14px;
+    color: #444;
+    font-family: microsoft yahei;
+}
