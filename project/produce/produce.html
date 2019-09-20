@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://127.0.0.1/project/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="./css/produce.css">
+    <script src="./js/produce.js"></script>
+    <title>新品上架</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div id="heater"></div>
+    <script>
+        $("#heater").load("../heater/he.html");
+    </script>
+
+    <!-------------------------- content --------------------------->
+    <div id="content" class="con">
+        <p class="current">
+            <a href="#">首页</a><span class="STYLE">&gt;</span><span class="cpname">新品上架</span>
+        </p>
+        <div id="box" class="con">
+            <div id="left-box">
+                <div class="box_tj">
+                    <div class="title_tj">浏览过该类商品的顾客还购买了</div>
+                    <div class="good_tj good_rx">
+                        <div class="tl_img">
+                            <a href="http://www.no5.com.cn/product/26238.html" target="_blank">
+                                <img src="http://photo.no5.com.cn/product/sphoto/prod_26238_S_130808095513_75991798.jpg"
+                                    width="82" height="82">
+                            </a>
+                        </div>
+                        <div class="tl_text">
+                            <p class="rx_name">
+                                <a href="http://www.no5.com.cn/product/26238.html" target="_blank">Shiseido
+                                    资生堂百优全新精纯乳霜(10320) 50ml
+                                </a>
+                            </p>
+                            <p class="rx_price">￥<span>535.00</span></p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="good_tj good_rx">
+                        <div class="tl_img"><a href="http://www.no5.com.cn/product/34802.html" target="_blank"><img
+                                    src="http://photo.no5.com.cn/product/sphoto/prod_34802_S_181123104713_49796272.jpg"
+                                    width="82" height="82"></a></div>
+                        <div class="tl_text">
+                            <p class="rx_name"><a href="http://www.no5.com.cn/product/34802.html"
+                                    target="_blank">Biotherm
+                                    碧欧泉 平板包 </a></p>
+                            <p class="rx_price">￥<span>68.00</span></p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="good_tj good_rx">
+                        <div class="tl_img"><a href="http://www.no5.com.cn/product/14898.html" target="_blank"><img
+                                    src="http://photo.no5.com.cn/product/sphoto/prod_14898_S_131012171047_20313088.jpg"
+                                    width="82" height="82"></a></div>
+                        <div class="tl_text">
+                            <p class="rx_name"><a href="http://www.no5.com.cn/product/14898.html" target="_blank">CK
+                                    In2u因为你女士香水 100ml</a></p>
+                            <p class="rx_price">￥<span>145.00</span></p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="good_tj good_rx">
+                        <div class="tl_img"><a href="http://www.no5.com.cn/product/32317.html" target="_blank"><img
+                                    src="http://photo.no5.com.cn/product/sphoto/prod_32317_S_161207104624_41285988.jpg"
+                                    width="82" height="82"></a></div>
+                        <div class="tl_text">
+                            <p class="rx_name"><a href="http://www.no5.com.cn/product/32317.html"
+                                    target="_blank">calorie
+                                    off 小猪瘦腿提臀塑形连裤袜80D（24079）适合身高150-165 M-L</a></p>
+                            <p class="rx_price">￥<span>66.00</span></p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="good_tj good_rx">
+                        <div class="tl_img"><a href="http://www.no5.com.cn/product/14216.html" target="_blank"><img
+                                    src="http://photo.no5.com.cn/product/sphoto/prod_14216_S_181112154324_12983834.jpg"
+                                    width="82" height="82"></a></div>
+                        <div class="tl_text">
+                            <p class="rx_name"><a href="http://www.no5.com.cn/product/14216.html" target="_blank">Estee
+                                    Lauder 雅诗兰黛鲜活亮采红石榴二合一洁面乳/洗面奶（2018新 381872） 125ml</a></p>
+                            <p class="rx_price">￥<span>228.00</span></p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="right-box">
+            <div class="filter">
+                <dl>
+                    <dt>排序：</dt>
+                    <dd class="curr">
+                        <button class="typeBtn">销量</button>
+                        <button class="typeBtn">价格↓</button>
+                        <button class="typeBtn">价格↑</button></dd>
+                </dl>
+            </div>
+            <div id="list">
+            </div>
+            <div class="page-below">
+                    <div id="page">
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div id="footer"></div>
+    <script>
+        $("#footer").load("../foot/foot.html")
+    </script>
+</body>
+
+</html>

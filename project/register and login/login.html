@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册登录</title>
+    <script src="http://127.0.0.1/project/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/register.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/captcha.min.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <div id="heater"></div>
+    <script>
+        $("#heater").load("../heater/he.html");
+    </script>
+    <!-- content -->
+    <div id="login">
+        <div class="login-box con">
+            <div class="smool-box">
+                <div class="left-box">
+                    <div class="log-left-tit">
+                        <img src="http://127.0.0.1/project/register%20and%20login/img/tittle-left.png" alt="">
+                    </div>
+                    <form class="form">
+                        <div class="input">
+                            <div class="width60">用 户 名：</div>
+                            <input type="text" name="username" maxlength="30" class="fixlogininput" id="left-user">
+                            <div class="tip reg_errmsg"></div>
+                        </div>
+                        <div class="input">
+                            <div class="width60"><span>密码：</span><span class="width24"></span><span></span></div>
+                            <input type="password" name="password" maxlength="20" class="fixlogininput" id="left-password">&nbsp;<a
+                                href="#">忘记密码？</a>
+                            <div id="txtLoginPasswordChkMsg" class="tip reg_errmsg"></div>
+                        </div>
+                        <div id="divVerifyCode" class="input" style="display: block;">
+                            <div class="width60">验 证 码：</div>
+                            <input name="verifyCode" maxlength="6" class="testcode" id="left-yzm">
+                            <div id="txtLoginVerifyCodeChkMsg" class="tip reg_errmsg"></div>
+                            <canvas width="120" height="45" id="left-captcha" style="position: absolute;left: 240px;top: 240px;"></canvas>
+                        </div>
+                        <div class="input">
+                            <div id="login-btn">
+                                <button id="btnLogin" style="width: 100px; height: 35px;">登录</button>
+                            </div>
+                        </div>
+                        <img src="http://127.0.0.1/project/register%20and%20login/img/zfb.png" alt="" style="margin-left:85px;">
+                    </form>
+                </div>
+                <div id="right-box">
+                    <div class="log-right-tit">
+                        <img src="http://127.0.0.1/project/register%20and%20login/img/tittle-right.png" alt="">
+                    </div>
+                    <form class="form">
+                        <div class="input">
+                            <div class="width60">用 户 名：</div>
+                            <input type="text" name="TXTRegUserName" id="txtRegUserName" maxlength="30"
+                                class="fixlogininput input_failure" value="">
+                            <div class="tip reg_errmsg">用户名的长度应为3～30个字符之间(汉字占两个字符)！</div>
+                        </div>
+                        <div class="input">
+                            <div class="width60">输入密码：</div>
+                            <input type="password" name="TXTRegPassword" id="txtRegPassword" maxlength="16"
+                                class="fixlogininput input_failure">
+                            <div class="tip reg_errmsg">密码的长度应该为6～16个字符之间！</div>
+                        </div>
+                        <div class="input">
+                            <div class="width60">重复密码：</div>
+                            <input type="password" name="TXTRePassword" id="txtRePassword" maxlength="16"
+                                class="fixlogininput">
+                            <div class="tip"></div>
+                        </div>
+                        <div class="input">
+                            <div class="width60">电子邮件：</div>
+                            <input type="text" name="TXTEmail" id="txtEmail" maxlength="50" class="fixlogininput"
+                                value="">
+                            <div class="tip"></div>
+                        </div>
+                        <div class="input">
+                            <div id="verifycode-box" style="position: relative;">
+                                <div class="width60">验 证 码：</div>
+                                <input name="TXTVerifyCode" id="txtVerifyCode" maxlength="6" class="testcode">
+                                <div class="tip"></div>
+                                <canvas width="120" height="45" id="captcha" style="position: absolute;right: 100px;top: 0px;"></canvas>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <div class="width60"></div>
+                            <input type="checkbox" id="reg-proto" checked="checked">
+                            <span>我已阅读并同意</span>
+                            <a href="#" id="elem-proto">《NO5用户注册协议》</a>
+                            <div id="err-proto" class="tip"></div>
+                        </div>
+                        <div id="reg-btn">
+                            <button id="btnUserRegSubmit" style="width: 100px;height: 35px;">注册</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div id="footer"></div>
+    <script>
+        $("#footer").load("../foot/foot.html")
+    </script>
+</body>
+
+</html>

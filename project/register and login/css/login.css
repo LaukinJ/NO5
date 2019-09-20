@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.con {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+#login {
+    width: 100%;
+    height: 515px;
+}
+
+.login-box {
+    height: 515px;
+    margin-top: 40px;
+    padding: 0 10px;
+}
+
+.smool-box {
+    border: 1px solid #C6E6F3;
+    margin-top: 10px;
+    padding: 10px;
+    /* text-align: left; */
+    width: 958px;
+    /* float: left; */
+    margin: 0 auto;
+    margin-left: 135px;
+    margin-top: 10px;
+    z-index: 1;
+    height: auto;
+    position: absolute;
+}
+
+.log-left-tit {
+    height: 43px;
+    width: 439px;
+    background-repeat: no-repeat;
+    background-position: -162px -153px;
+    margin-bottom: 37px;
+}
+
+.left-box {
+    height: 453px;
+    width: 455px;
+    float: left;
+    margin-top: 40px;
+    padding: 0 10px;
+}
+
+.log-left-tit img {
+    height: 43px;
+    width: 439px;
+}
+
+.form {
+    margin: 0;
+}
+
+.input {
+    height: 55px;
+    margin-left: 50px;
+    font-size: 12px;
+}
+
+.width60 {
+    width: 60px;
+    height: 25px;
+    line-height: 23px;
+    text-align: right;
+    float: left;
+}
+
+.fixlogininput {
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    width: 200px;
+    padding: 2px;
+    border: 1px solid #7f9db9;
+}
+
+.reg_errmsg {
+    color: #ff0000;
+}
+
+.input a:visited {
+    color: #00B6F2;
+}
+
+.testcode {
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    border: 1px solid #7f9db9;
+    padding: 2px;
+    width: 70px;
+}
+
+
+#login-btn {
+    height: 29px;
+    width: 190px;
+    margin-left: 132px;
+    display: inline;
+    float: left;
+}
+
+#login_loading {
+    visibility: hidden;
+    white-space: normal;
+}
+
+#right-box {
+    height: 453px;
+    width: 455px;
+    float: right;
+    margin-top: 40px;
+    padding: 0 10px;
+}
+
+.log-right-tit img {
+        height: 43px;
+        width: 439px;
+        background-repeat: no-repeat;
+        background-position: -162px -153px;
+        margin-bottom: 37px;
+}
+
+.tip {
+    height: 25px;
+    font-size: 12px;
+    line-height: 25px;
+    padding-left: 65px;
+    position: relative;
+    color: #515151;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    white-space: normal;
+    /* display: none; */
+}
+#reg-btn{
+    margin-left: 160px;
+}
+#btnUserRegSubmit{
+    width: 100px;
+}
+.mistake{
+    background: #FFFDDF;
+}

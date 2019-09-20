@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.con {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    font-size: 12px;
+}
+a:hover{
+    color: red;
+}
+/******************* content *********************/
+#content {
+    width: 1200px;
+    margin: 0 auto;
+}
+.current {
+    line-height: 34px;
+    color: #999;
+    width: 980px;
+    height: 34px;
+    margin-top: 15px;
+}
+.current .STYLE {
+    margin: 0 10px;
+}
+.current .cpname {
+    color: #4e7fc2;
+    margin: 0px;
+}
+#left-box{
+    float: left;
+    width: 230px;
+}
+.box_tj {
+    width: 228px;
+    border: 1px solid #e4e4e4;
+    margin-top: 10px;
+    height: 603px;
+}
+.title_tj {
+    width: 226px;
+    height: 33px;
+    line-height: 33px;
+    margin: 1px;
+    background: url(http://photo.no5.com.cn/page_2014/images/p2lbg.jpg) repeat-x;
+    color: #333;
+    font-family: microsoft yahei;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #e4e4e4;
+}
+.good_rx {
+    padding: 15px 10px;
+    margin-bottom: 0px;
+    width: 228px;
+    height: 113px;
+    overflow: hidden;
+    border-bottom: 1px dashed #e4e4e4
+}
+.tl_img {
+    float: left;
+    width: 100px;
+    height: 82px;
+    text-align: left;
+}
+.tl_img a {
+    text-decoration: none;
+    color: #666;
+}
+.tl_text {
+    float: left;
+    width: 102px;
+    padding-top: 15px;
+}
+ .tl_text p {
+    line-height: 16px;
+}
+.rx_name {
+    text-align: left;
+    height: 30px;
+    overflow: hidden;
+}
+.rx_price {
+    text-align: right;
+    margin-top: 8px;
+    font-family: microsoft yahei;
+    color: #ff1a3a;
+    font-size: 14px;
+    font-weight: bold;
+}
+#right-box{
+    width: 960px;
+    float: right;
+}
+.filter {
+    margin-top: 10px;
+    width: 938px;
+    height: 39px;
+    background: url(http://photo.no5.com.cn/page_2014/images/filbg.jpg) repeat-x;
+    border: 1px solid #eee;
+    border-top: 2px solid #15ade0;
+    /* float: left; */
+    padding: 5px 10px;
+}
+ .filter dl, .filter dl dt, .filter dl dd {
+    float: left;
+    line-height: 26px;
+}
+.curr {
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+}
+button{
+    margin-left: 10px;
+    width: 100px;
+    height: 25px;
+    background:#fff;
+}
+#list{
+    width: 960px;
+    float: left;
+    margin: 10px 0;
+    margin-right: 5px;
+}
+.plist{
+    width: 214px;
+    float: left;
+    background: #fff;
+    padding: 13px;
+    text-align: center;
+}
+.plist img{
+    padding: 7px;
+    width: 189px;
+    height: 200px;
+    background: #fff;
+}
+.plist:hover{
+    background: rgb(238, 236, 236);
+}
+.pro-name {
+    line-height: 18px;
+    height: 36px;
+    overflow: hidden;
+}
+.pro-name a{
+    text-align: left;
+}
+.pro-price {
+    color: #ff1a3a;
+    font-size: 14px;
+    font-family: microsoft yahei;
+    font-weight: bold;
+    margin: 10px 0 3px 0;
+}
+.pro-price span {
+    font-family: verdana;
+    font-size: 16px;
+}
+.pro-price .zhekou {
+    font-family: simsun;
+    font-size: 12px;
+    font-weight: normal;
+}
+.buybtn a {
+    display: block;
+    float: left;
+    padding: 0 15px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 3px;
+    background: #fc1c5a;
+    text-align: center;
+}
+.buybtn .add {
+    background: #fc1c5a;
+    color: #fff;
+}
+.buybtn .shouc {
+    background: #efefef;
+    color: #666;
+    margin-left: 10px;
+    border: 1px solid #dfdfdf;
+    height: 22px;
+    line-height: 22px;
+}
+.active{
+    background: #ccc
+}
+.page-below{
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+#page a{
+    display: block;
+    width: 40px;
+    height: 20px;
+    float: left;
+    color: #666;
+    text-align: center;
+    line-height: 20px;
+}
