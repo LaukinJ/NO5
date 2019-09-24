@@ -38,7 +38,8 @@
                 <li class="line">|</li>
                 <li><a href="#">帮助中心</a></li>
                 <li class="tel">
-                    <span><img style="margin-top: 5px" src="http://127.0.0.1/project/heater/img/www.no5.com.cn_%20(1)_r2_c2.png" alt=""></span>
+                    <span><img style="margin-top: 5px"
+                            src="http://127.0.0.1/project/heater/img/www.no5.com.cn_%20(1)_r2_c2.png" alt=""></span>
                     <span class="number">010-83570678</span>
                 </li>
             </ul>
@@ -97,7 +98,7 @@
             <div class="float-list" id="float-list">
                 <span class="float-list-btn" style="background: #02B2ED">全部商品分类</span>
                 <div id="hidden-list">
-                    <dl id="webf0" class="odl"style="background: rgb(255, 255, 255);">
+                    <dl id="webf0" class="odl" style="background: rgb(255, 255, 255);">
                         <dt class="">
                             <strong><a href="#" node-id="307">面部护理</a></strong>
                             <p>
@@ -282,7 +283,7 @@
                             </div>
                         </dd>
                     </dl>
-                    <dl id="webf1" class="odl"style="background: rgb(255, 255, 255);">
+                    <dl id="webf1" class="odl" style="background: rgb(255, 255, 255);">
                         <dt class="">
                             <strong style="background-position: -464px -296px;"><a href="#"
                                     node-id="308">彩妆</a></strong>
@@ -422,7 +423,7 @@
                             </div>
                         </dd>
                     </dl>
-                    <dl id="webf2" class="odl"style=" background: rgb(255, 255, 255);">
+                    <dl id="webf2" class="odl" style=" background: rgb(255, 255, 255);">
                         <dt class="">
                             <strong style="background-position: -464px -476px;"><a href="#"
                                     node-id="309">香氛</a></strong>
@@ -506,7 +507,7 @@
                             </div>
                         </dd>
                     </dl>
-                    <dl id="webf3" class="odl"style="background: rgb(255, 255, 255);">
+                    <dl id="webf3" class="odl" style="background: rgb(255, 255, 255);">
                         <dt class="">
                             <strong style="background-position: -464px -584px;"><a href="#"
                                     node-id="310">身体护理</a></strong>
@@ -628,7 +629,7 @@
                             </div>
                         </dd>
                     </dl>
-                    <dl id="webf4" class="odl"style="background: rgb(255, 255, 255);">
+                    <dl id="webf4" class="odl" style="background: rgb(255, 255, 255);">
                         <dt class="">
                             <strong style="background-position: -464px -764px;"><a href="#"
                                     node-id="311">头发护理</a></strong>
@@ -720,7 +721,7 @@
                             </div>
                         </dd>
                     </dl>
-                    <dl id="webf5" class="odl"style="background: rgb(255, 255, 255);">
+                    <dl id="webf5" class="odl" style="background: rgb(255, 255, 255);">
                         <dt class="">
                             <strong style="background-position: -464px -890px;"><a href="#"
                                     node-id="312">男士专区</a></strong>
@@ -812,7 +813,7 @@
                             </div>
                         </dd>
                     </dl>
-                    <dl id="webf6" class="odl"style="background: rgb(255, 255, 255);">
+                    <dl id="webf6" class="odl" style="background: rgb(255, 255, 255);">
                         <dt class="" style="padding-bottom: 16px;">
                             <strong style="background-position: -464px -998px;"><a href="#"
                                     node-id="313">美容工具</a></strong>
@@ -905,6 +906,28 @@
         </div>
     </div>
     </div>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            var nav = document.getElementById("min-nav"); //获取页面nav元素
+            var navTop = nav.offsetTop; //获取nav距离顶部的距离
+            //滚动条滚动时执行函数
+            window.onscroll = function () {
+                var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body
+                    .scrollTop; //获取滚动条距离顶部的距离，后面两条时为了兼容浏览器
+                if (scrollTop > navTop) {
+                    nav.style.position = "fixed";
+                    nav.style.top = "0";
+                    nav.style.left = "0";
+
+                } else if (scrollTop = navTop) {
+                    nav.style.position = ""; //我做的时滚动条在中部的，在加个判断
+                } else {
+                    nav.style.position = " ";
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>

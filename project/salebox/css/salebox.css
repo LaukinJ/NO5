@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.con {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    font-size: 12px;
+}
+
+/*************** salebox ***************/
+#salebox {
+    height: 477px;
+}
+
+.sale {
+    height: 477px;
+    clear: both;
+    margin-top: 20px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.saletabs {
+    width: 1200px;
+    height: 40px;
+    line-height: 40px;
+    background: url(http://photo.no5.com.cn/page_2014/images/tabs_bg.jpg) repeat-x;
+    font-family: microsoft yahei;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+
+.saletabs ul li {
+    float: left;
+    color: #333;
+    cursor: pointer;
+    border-bottom: 2px solid #d0d0d0;
+    padding: 0 82px;
+    background: url(http://photo.no5.com.cn/page_2014/images/tabsli_bg.jpg) no-repeat right bottom;
+}
+
+.saletabs ul li:hover {
+    border-bottom: 2px solid #0094ff;
+}
+
+.con-two {
+    margin-top: 5px;
+}
+
+.con-two .salebox-1,
+.con-two .salebox-2,
+.con-two .salebox-3,
+.con-two .salebox-4 {
+    float: left;
+}
+
+.con-two .salebox-1,
+.con-two .salebox-2,
+.con-two .salebox-3,
+.con-two .salebox-2 .salebox-2-l {
+    border-right: 1px solid #f1f1f1;
+}
+
+.con-two .salebox-1,
+.con-two .salebox-2 .salebox-2-l,
+.con-two .salebox-2 .salebox-2-r,
+.con-two .salebox-3,
+.con-two .salebox-4 dl {
+    width: 239px;
+}
+
+.con-two dl dt {
+    text-align: center;
+}
+
+.con-two dl dd {
+    padding: 0 13px;
+    font-family: microsoft yahei;
+    font-size: 14px;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.con-two dl .good-name,
+.con-two dl .good-name a {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.con-two dl .oneline {
+    height: 18px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.con-two dl .good-exce,
+.con-two dl .good-exce a {
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.con-two dl .good-price {
+    font-size: 18px;
+    font-family: microsoft yahei;
+    color: #ff1a3a;
+}
+
+.con-two dl .good-price .good-price-cur {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.con-two dl .good-price .zhekou {
+    font-family: simsun;
+    font-size: 12px;
+}
+
+.con-two .salebox-2,
+.con-two .salebox-2 .salebox-2-d {
+    width: 479px;
+}
+
+.con-two .salebox-2 .salebox-2-d dt,
+.con-two .salebox-2 .salebox-2-d dd {
+    float: left;
+    width: 220px;
+}
+
+.con-two .salebox-2 .salebox-2-d {
+    border-top: 1px solid #f1f1f1;
+    padding-top: 10px;
+}
+
+.con-two .salebox-2 div {
+    float: left;
+}
+
+.con-two .salebox-2 .salebox-2-l,
+.con-two .salebox-4 dl {
+    padding-bottom: 10px;
+}
+
+.con-two .salebox-3 dl dt {
+    margin-top: 15px;
+}
+
+.con-two .salebox-2 .salebox-2-l,
+.con-two .salebox-2 .salebox-2-r {
+    height: 200px;
+}
+
+.con-two .salebox-4 .s-4-t {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+#con_two_2 dl {
+    float: left;
+    width: 228px;
+    margin-right: 15px;
+}
+
+#con_two_2 .lastdl,
+#con_two_4 .lastdl {
+    margin-right: 0;
+}
+
+#con_two_2 dl dt {
+    width: 228px;
+    height: 300px;
+}
+
+#con_two_2 dl dd {
+    padding: 0 5px;
+}
+
+#con_two_2 dl .pro-name {
+    padding-top: 14px;
+    padding-bottom: 12px;
+    height: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#con_two_2 dl .whotui {
+    font-weight: bold;
+    color: #0099ff;
+}
+
+#con_two_2 dl .pro-name a,
+#con_two_4 dl .pro-name a {
+    color: #444;
+}
+
+#con_two_2 dl .neir {
+    background: url(http://photo.no5.com.cn/page_2014/images/nrbg.jpg) no-repeat 5px 0;
+    line-height: 22px;
+    margin-top: 15px;
+    color: #999;
+    text-indent: 2em;
+    height: 52px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#con_two_2 dl .neir a {
+    color: #0099ff;
+}
+
+#con_two_4 dl {
+    width: 206px;
+    height: 394px;
+    border: 1px solid #ededed;
+    border-bottom: 4px solid #ededed;
+    background: #f6f6f6;
+    margin-right: 15px;
+    padding: 10px;
+    float: left;
+}
+
+#con_two_4 dl dt {
+    width: 180px;
+    height: 180px;
+    background: #fff;
+    padding: 13px;
+}
+
+#con_two_4 dl dd {
+    padding: 0 3px;
+    width: 200px;
+}
+
+#con_two_4 dl .pro-name {
+    border-bottom: 1px solid #d1d1d1;
+    height: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 19px;
+    padding-bottom: 10px;
+    margin-bottom: 3px;
+}
+
+#con_two_4 dl .neir {
+    color: #999;
+    line-height: 18px;
+    height: 32px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 13px;
+}
+
+#con_two_4 dl .firstneir {
+    margin-top: 16px;
+}
+
+#con_two_4 dl .neir span {
+    font-weight: bold;
+    color: #0099ff;
+    margin-right: 7px;
+}
