@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.con {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    font-size: 12px;
+}
+
+a {
+    color: #666;
+}
+
+/*************护肤*********************/
+.brand-tit {
+    border-bottom: 2px solid #d0d0d0;
+    margin: 20px 0 10px 0;
+    width: 1200px;
+    height: 40px;
+    float: left;
+}
+
+.brand-tit-l {
+    font-family: microsoft yahei;
+    font-size: 18px;
+    color: #333;
+    float: left;
+    font-weight: bold;
+    padding-left: 2px;
+    width: 230px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.brand-tit-l img {
+    height: 37px;
+}
+
+.brand-tit-r {
+    float: right;
+    display: inline;
+    height: 25px;
+    width: 900px;
+    margin-top: 10px;
+}
+
+.brand-tit-r dl dd {
+    float: right;
+    height: 25px;
+    line-height: 25px;
+}
+
+.brand-tit-r dl dd a {
+    height: 25px;
+    line-height: 25px;
+    padding: 0 15px;
+    float: left;
+    background: url(http://photo.no5.com.cn/page_2014/images/brangtit.jpg) no-repeat right center;
+}
+
+.brand-tit-r dl dd:first-child a {
+    background: none;
+}
+
+.brand-main .brand-item {
+    float: left;
+    width: 236px;
+    height: 300px;
+    margin-right: 5px;
+}
+
+.brand-main .last {
+    margin-right: 0;
+}
+
+.LETTER-RED {
+    color: red;
+}
+
+/****************list*********************/
+.hufu-tit {
+    border-bottom: 2px solid #0094ff;
+    margin-top: 24px;
+}
+
+.hufu-main {
+    width: 1200px;
+    height: 538px;
+    border-bottom: 1px solid #e4e4e4;
+    clear: both;
+}
+
+.hufu-main .hufu-banner {
+    float: left;
+    width: 268px;
+    height: 480px;
+}
+
+.hufu-main .hufu-list {
+    width: 690px;
+    float: left;
+}
+
+.hufu-main .hufu-top {
+    float: right;
+    width: 218px;
+    margin-left: 24px;
+}
+
+.hufu-main .hufu-list .hufu-item {
+    width: 344px;
+    float: left;
+    padding: 7px 0 14px 0;
+    height: 180px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.hufu-main .hufu-list .firstdl {
+    border-right: 1px solid #f1f1f1;
+}
+
+.hufu-main .hufu-list .hufu-item dt {
+    width: 190px;
+    float: left;
+    text-align: center;
+}
+
+.hufu-main .hufu-list .hufu-item dd {
+    width: 150px;
+    float: left;
+    font-size: 14px;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hufu-main .hufu-list .hufu-item .good-name {
+    color: #666;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    height: 36px;
+    font-family: microsoft yahei;
+}
+
+.hufu-main .hufu-list .hufu-item .good-exce {
+    color: #000;
+    margin-bottom: 30px;
+    height: 32px;
+    font-family: microsoft yahei;
+}
+
+.hufu-main .hufu-list .hufu-item .good-exce a {
+    color: #000;
+}
+
+.hufu-main .hufu-list .hufu-item .good-price {
+    font-size: 18px;
+    font-family: microsoft yahei;
+}
+
+.hufu-main .hufu-list .good-price {
+    font-size: 18px;
+    font-family: microsoft yahei;
+    color: #ff1a3a;
+}
+
+.hufu-main .hufu-list .good-price .good-price-cur {
+    font-size: 24px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.hufu-main .hufu-list .good-price .zhekou {
+    font-family: simsun;
+    font-size: 12px;
+}
+
+.hufu-main .hufu-list .hufu-item-d {
+    width: 230px;
+    border-right: 1px solid #f1f1f1;
+    float: left;
+    padding: 0 24px;
+    padding-top: 15px;
+    font-family: microsoft yahei;
+    font-size: 14px;
+}
+
+.hufu-main .hufu-list .lastdl {
+    border-right: none;
+}
+
+.hufu-main .hufu-list .hufu-item-d .good-name {
+    color: #666;
+    height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hufu-main .hufu-list .hufu-item-d .good-exce {
+    color: #000;
+    height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 12px;
+    margin-top: 3px;
+}
+
+.hufu-main .hufu-list .hufu-item-d .good-exce a {
+    color: #000;
+}
+
+/*护肤排行*/
+.hufu-main .hufu-top h2 {
+    font-family: microsoft yahei;
+    font-size: 16px;
+    line-height: 32px;
+    height: 32px;
+    color: #ff1a3a;
+    text-align: center;
+    width: 218px;
+    border-bottom: 2px solid #d0d0d0;
+}
+
+.list_show li {
+    list-style: none;
+    float: left;
+    width: 218px;
+}
+
+.list_show li .toplist {
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 0 8px;
+    background: url(http://photo.no5.com.cn/page_2014/images/topbg.jpg) no-repeat 7px 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.list_show li .num {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #e9025e;
+    display: block;
+    width: 22px;
+    height: 42px;
+    line-height: 44px;
+    padding-left: 5px;
+    float: left;
+}
+
+.list_show li div {
+    display: none;
+    float: left;
+}
+
+.list_show li.hover span {
+    display: none;
+}
+
+.list_show li.hover div {
+    display: block;
+    height: 240px;
+    width: 176px;
+    background: #fff;
+    color: #aa0;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+    padding: 13px 21px;
+}
+
+.list_show li.hover div .top-name {
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+
+.list_show li.hover div .top-price {
+    font-family: microsoft yahei;
+    font-size: 14px;
+    color: #ff1a3a;
+    font-weight: bold;
+}
+
+.hufu-main .hufu-brand {
+    width: 1200px;
+    height: 58px;
+    float: left;
+    border-top: 1px solid #e4e4e4;
+    padding: 0 6px;
+}
+
+.hufu-main .hufu-brand a {
+    display: block;
+    float: left;
+    margin: 11px 12px;
+    display: inline;
+}
+
+.hufu-main .hufu-brand a img {
+    width: 75px;
+    height: 36px;
+}

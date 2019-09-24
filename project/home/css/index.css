@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.con {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    font-size: 12px;
+}
+
+/* ******************** */
+#img-box1 {
+    height: 187px;
+}
+
+#not-box {
+    height: 32px;
+}
+
+.notice {
+    clear: both;
+    width: 770px;
+    height: 33px;
+    margin: 0 auto;
+    padding: 0 199px 0 250px;
+    line-height: 33px;
+    overflow: hidden;
+}
+
+.notice span {
+    display: block;
+    float: left;
+    width: 19px;
+    height: 19px;
+    background: url(http://photo.no5.com.cn/page_2014/images/detail.gif?v=20140610) no-repeat -409px -30px;
+    margin-top: 6px;
+    margin-right: 6px;
+}
+
+.notice a:hover {
+    text-decoration: underline;
+}
+
+/***************** pphd ****************/
+#Flatbrandactivity{
+    height: 345px;
+}
+.Flat{
+    height: 345px;
+}
+.brand-tit {
+    border-bottom: 2px solid #d0d0d0;
+    margin: 20px 0 10px 0;
+    width: 1200px;
+    height: 40px;
+    float: left;
+}
+
+.brand-tit-l {
+    font-family: microsoft yahei;
+    font-size: 18px;
+    color: #333;
+    float: left;
+    font-weight: bold;
+    padding-left: 2px;
+    width: 230px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.brand-tit-r {
+    float: right;
+    display: inline;
+    height: 25px;
+    width: 900px;
+    margin-top: 10px;
+}
+
+.brand-tit-r dl dd {
+    float: right;
+    height: 25px;
+    line-height: 25px;
+}
+
+.brand-tit-r dl dd a {
+    height: 25px;
+    line-height: 25px;
+    padding: 0 15px;
+    float: left;
+    background: url(http://photo.no5.com.cn/page_2014/images/brangtit.jpg) no-repeat right center;
+}
+
+.brand-tit-r dl dd:first-child a {
+    background: none;
+}
+
+.brand-main .brand-item {
+    float: left;
+    width: 236px;
+    height: 300px;
+    margin-right: 5px;
+}
+
+.brand-main .last {
+    margin-right: 0;
+}
