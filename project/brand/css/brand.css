@@ -312,3 +312,295 @@ a {
     width: 75px;
     height: 36px;
 }
+
+/* 香水 */
+.hufu-main .perfume-img1 {
+    float: left;
+    width: 326px;
+    height: 480px;
+    margin-right: 1px;
+}
+
+.hufu-main .perfumegroup {
+    float: left;
+    width: 355px;
+    height: 480px;
+    margin-right: 1px;
+}
+
+.hufu-main .perfume-img5 {
+    float: left;
+    width: 275px;
+    height: 480px;
+}
+
+.hufu-main .perfumegroup .perfume-img2 {
+    width: 355px;
+    height: 276px;
+    margin-bottom: 1px;
+}
+
+.hufu-main .perfumegroup .perfume-img3 {
+    float: left;
+    width: 177px;
+    height: 203px;
+    margin-right: 1px;
+}
+
+.hufu-main .perfumegroup .perfume-img4 {
+    float: left;
+    width: 177px;
+    height: 203px;
+}
+
+/*男士*/
+.hufu-main .men-list {
+    width: 614px;
+    float: left;
+    height: 480px;
+}
+
+.hufu-main .men-banner {
+    float: left;
+    width: 344px;
+    height: 480px;
+}
+
+.hufu-main .men-list .men-item {
+    float: left;
+    width: 184px;
+    height: 227px;
+    border-right: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 6px 10px;
+    text-align: center;
+}
+
+.hufu-main .men-list .men-item dt {
+    text-align: center;
+    width: 180px;
+    height: 180px;
+}
+
+.hufu-main .men-list .men-item dd {
+    font-family: microsoft yahei;
+    font-size: 14px;
+    margin-top: 4px;
+    height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hufu-main .men-list .men-item .good-exce {
+    color: #ff1a3a;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hufu-main .men-list .men-item .good-name {
+    margin-top: 5px;
+}
+
+.hufu-main .men-list .men-item .good-price {
+    color: #ff1a3a;
+    font-size: 16px;
+    font-family: microsoft yahei;
+    font-weight: bold;
+}
+
+.hufu-main .men-list .men-item .good-price .zhekou {
+    font-family: simsun;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.hufu-main .men-list .lastdl {
+    border-right: none;
+}
+
+.hufu-main .men-list .bottomdl {
+    border-bottom: none;
+}
+
+/* news */
+.beautyinfo {
+    float: left;
+    width: 807px;
+    border: 1px solid #e4e4e4;
+    margin-top: 25px;
+    border-top: 2px solid #d0d0d0;
+    padding: 1px 20px;
+    height: 483px;
+    overflow: hidden;
+}
+
+.beautyinfo h2 {
+    font-size: 16px;
+    font-family: microsoft yahei;
+    color: #333;
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px solid #e4e4e4;
+    padding-left: 4px;
+    margin-bottom: 20px;
+}
+
+.beautyinfo .info-l {
+    float: left;
+    width: 250px;
+    padding: 0 32px 0 10px;
+    width: 292px;
+}
+
+.beautyinfo .info-l .title {
+    color: #545454;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 13px;
+    margin-bottom: 5px;
+    height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+}
+
+.beautyinfo .neir,
+.beautyshare dl .neir {
+    color: #999;
+    line-height: 22px;
+    height: 48px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.beautyinfo .neir a {
+    color: #c80f2f;
+}
+
+.beautyinfo .info-r {
+    float: left;
+    width: 465px;
+}
+
+.beautyinfo .info-r dl {
+    height: 140px;
+    clear: both;
+}
+
+.beautyinfo .info-r dl dt {
+    float: left;
+    width: 174px;
+}
+
+.beautyinfo .info-r dl dd {
+    float: left;
+    width: 291px;
+}
+
+.beautyinfo .info-r .title,
+.beautyshare dl .title {
+    color: #545454;
+    font-weight: bold;
+    line-height: 36px;
+    height: 36px;
+    margin-top: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.beautyinfo .info-r .title span {
+    color: #00a2ff;
+    margin-right: 9px;
+}
+
+.beautyinfo .info-r .neir {
+    height: 68px;
+}
+
+/* share */
+.beautyshare {
+    float: right;
+    width: 370px;
+    border: 1px solid #e4e4e4;
+    background: #f9f9f9;
+    margin-top: 25px;
+    border-top: 2px solid #d0d0d0;
+    position: relative;
+    padding-bottom: 10px;
+    height: 482px;
+}
+
+.beautyshare h2 {
+    position: absolute;
+    width: 338px;
+    top: 9px;
+    left: -9px;
+    background: url(http://photo.no5.com.cn/page_2014/images/dbg.jpg) no-repeat;
+    height: 43px;
+    line-height: 36px;
+    font-size: 16px;
+    font-family: microsoft yahei;
+    color: #fff;
+    padding-left: 19px;
+}
+
+.beautyshare h2 span {
+    float: right;
+    font-family: simsun;
+    font-size: 12px;
+    color: #666;
+    font-weight: normal;
+}
+
+.beautyshare dl {
+    margin: 0 22px;
+    width: 324px;
+    height: 93px;
+    border-top: 1px dotted #aaa;
+    padding-top: 11px;
+}
+
+.beautyshare .firstdl {
+    border-top: none;
+    padding-top: 61px;
+    width: 324px;
+    height: 154px;
+}
+
+.beautyshare dl dt {
+    float: right;
+    width: 100px;
+    text-align: right;
+}
+
+.beautyshare dl dt a img {
+    border: 1px solid #ccc;
+}
+
+.beautyshare dl dd {
+    float: left;
+    width: 224px;
+}
+
+.beautyshare dl .title {
+    line-height: 29px;
+    height: 29px;
+}
+
+.beautyshare dl .neir {
+    line-height: 18px;
+    height: 38px;
+}
+
+.beautyshare dl .neir a {
+    color: #999;
+}
+
+.beautyshare dl .neir a:hover {
+    color: #c80f2f;
+    text-decoration: underline;
+}
+
+.beautyshare dl .neir span {
+    font-weight: bold;
+    color: #c80f2f;
+}

@@ -89,7 +89,46 @@ body {
     color: #ff1a3a;
     font-size: 18px;
 }
-
+.kfbox {
+    position: fixed;
+    width: 58px;
+    height: 162px;
+    bottom: 8px;
+    margin-left: 1210px;
+    z-index: 100;
+}
+.kfbox dl {
+    font-family: microsoft yahei;
+    font-size: 12px;
+    color: #444;
+    width: 56px;
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 8px 0;
+    text-align: center;
+    cursor: pointer;
+    height: 79px;
+}
+.kfbox .top dt {
+    width: 22px;
+    height: 21px;
+    overflow: hidden;
+    background: url(http://photo.no5.com.cn/page_2014/images/kf.jpg) no-repeat 0 -24px;
+    margin: 0 auto;
+}
+.kfbox dl dd {
+    margin-top: 8px;
+}
+.kfbox .kf dt {
+    width: 22px;
+    height: 24px;
+    overflow: hidden;
+    background: url(http://photo.no5.com.cn/page_2014/images/kf.jpg) no-repeat 0 0;
+    margin: 0 auto;
+}
+.kfbox dl dd {
+    margin-top: 8px;
+}
 /******************* headbox*********************/
 #headbox {
     height: 90px;
