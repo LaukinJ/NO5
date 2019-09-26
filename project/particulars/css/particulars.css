@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.con {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    font-size: 12px;
+}
+
+/* ************************** */
+.content{
+    padding-top: 34px;
+}
+#img-box {
+    float: left;
+    width: 457px;
+    height: 407px;
+    margin-left: 274px;
+    padding-top: 34px;
+}
+
+.p01_r {
+    float: left;
+    width: 503px;
+}
+  
+.p01_r h2 {
+    font-size: 16px;
+    color: #333;
+    line-height: 20px;
+    padding: 10px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.cppro {
+    padding: 12px 10px 2px 10px;
+    border-top: 1px dotted #e4e4e4;
+    width: 483px;
+}
+
+.pro_name {
+    float: left;
+    width: 66px;
+    height: 28px;
+    padding-top: 1px;
+}
+
+.n_neir {
+    float: right;
+    width: 397px;
+    height: 29px;
+}
+
+.prodTxt1 {
+    margin-left: 30px;
+}
+
+.clear {
+    clear: both;
+}
+
+.cppro {
+    padding: 12px 10px 2px 10px;
+    border-top: 1px dotted #e4e4e4;
+    width: 483px;
+}
+
+.n_neir a {
+    color: #4063a7;
+}
+
+#sp_xin_box {
+    width: 70px;
+    height: 13px;
+    float: left;
+    visibility: visible;
+}
+
+.sp_xin_line {
+    height: 13px;
+    background: url(http://photo.no5.com.cn/main/images/xin_smallmid.jpg) repeat-x;
+}
+
+.star_rank {
+    position: absolute;
+    visibility: visible;
+    width: 70px;
+    height: 13px;
+    background: url(http://photo.no5.com.cn/main/images/xin_small.png) no-repeat;
+    z-index: 99;
+    margin-top: -14px;
+}
+
+.sp_user_count {
+    width: 120px;
+    height: 29px;
+    color: #333;
+    float: left;
+    text-align: right;
+}
+
+.magenta {
+    color: #fc7f0f;
+}
+
+.prodRedTxt {
+    color: #d11010;
+}
+.prodTxt2 {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.prodTxt2 img {
+    margin-bottom: 6px;
+}
+#boxBuy {
+    background: #fffcf3;
+    border: 1px solid #f5debc;
+    height: 72px;
+    line-height: 72px;
+    padding-left: 21px;
+}
+#boxBuy img {
+    cursor: pointer;
+}
+.textinput {
+    width: 30px;
+    height: 20px;
+    border: 1px solid #cdccc7;
+    margin: 0 4px;
+    text-align: center;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+.btnBuy {
+    background: url(http://photo.no5.com.cn/main/images/btnGroup.gif?1126) no-repeat;
+}
+.prodBtn1 {
+    border-width: 0px;
+    width: 140px;
+    height: 40px;
+    margin: 0 20px;
+    vertical-align: middle;
+}
+.btnFav {
+    background: url(http://photo.no5.com.cn/main/images/btnGroup.gif?1126) no-repeat 0px -42px;
+}
+#favSuc {
+    position: relative;
+    visibility: hidden;
+    float: left;
+    top: -48px;
+    left: 330px;
+    padding: 3px;
+    padding-left: 25px;
+    color: Green;
+    /* background: url(http://photo.no5.com.cn/main/images/complete1.jpg) no-repeat 5px 1px; */
+}
+.bigimg{
+    width: 400px;
+    height: 400px;
+}

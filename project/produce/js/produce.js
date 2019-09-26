@@ -36,7 +36,7 @@ $(function () {
                 let data = response.data;
                 let html = data.map(function(ele){
                     return`
-                    <li class="plist">
+                    <li class="plist" tittlenum="${ele.tittlenum}">
                     <img src="${ele.src}"
                         alt="">
                     <dd class="pro-name">
@@ -50,7 +50,7 @@ $(function () {
                     </dd>
                     <dd class="buybtn">
                         <a href="#" class="add" >加入购物车</a>
-                        <a href="#" class="shouc" >收藏</a>
+                        <a href="#" class="shouc">收藏</a>
                     </dd>
                 </li>  
                     `
@@ -61,10 +61,16 @@ $(function () {
     }
 
     $(".typeBtn").click(function() {
-        console.log( $(".typeBtn").index());
+        // console.log( $(".typeBtn").index());
         let index = $(this).index();
         currentType = index;
         getDatWithPage(currentType, 0);
         $("#page").children("a").first().addClass("active").siblings().removeClass("active");
     })
+
+    $("#list").on("click","li",function(){
+        let prduceNum = $(this).attr("tittlenum");
+        window.location.href = "http://127.0.0.1/project/particulars/particulars.html?id=" + prduceNum;
+    })
+
 })
