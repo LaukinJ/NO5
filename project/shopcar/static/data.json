@@ -1,0 +1,51 @@
+[
+{
+    "store": "新华自营",
+    "goods": [
+    {
+        "id": "001",
+        "img": "./img/01.jpg",
+        "title": "深入浅出Webpack",
+        "price": "75.10",
+        "num": 1
+    },
+    {
+        "id": "002",
+        "img": "./img/02.jpg",
+        "title": "Vue2实践揭秘",
+        "price": "85.10",
+        "num": 1
+    },
+    {
+        "id": "003",
+        "img": "./img/03.jpg",
+        "title": "CSS世界",
+        "price": "65.10",
+        "num": 1
+    }]
+},
+{
+    "store": "当当自营",
+    "goods": [
+    {
+        "id": "004",
+        "img": "./img/01.jpg",
+        "title": "深入浅出Webpack",
+        "price": "25.10",
+        "num": 1
+    },
+    {
+        "id": "005",
+        "img": "./img/02.jpg",
+        "title": "Vue2实践揭秘",
+        "price": "55.10",
+        "num": 1
+    },
+    {
+        "id": "006",
+        "img": "./img/03.jpg",
+        "title": "CSS世界",
+        "price": "77.10",
+        "num": 1
+    }]
+}]

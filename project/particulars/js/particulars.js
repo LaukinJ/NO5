@@ -91,7 +91,7 @@ $(function () {
                             style="vertical-align: middle;"><input type="text" id="buyAnt" value="1" class="textinput"
                             maxlength="3"><img src="http://www.no5.com.cn/images/add.jpg" width="13" height="13"
                             style="vertical-align: middle;"></span><button id="btnBuy" type="button"
-                        class="prodBtn1 btnBuy"></button>
+                        class="prodBtn1 btnBuy cd-add-to-cart"  data-price="${data[0].price}"></button>
                     <button type="button" id="btnFav" class="prodBtn1 btnFav"><input type="hidden"></button>
                     <div class="clear"></div>
                 </div>

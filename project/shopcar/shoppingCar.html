@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>购物车整体实现</title>
+	<script src="http://127.0.0.1/project/heater/js/jquery-3.4.1.js"></script>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		ul li {
+			list-style: none;
+		}
+
+		body {
+			font-size: 12px;
+		}
+
+		.header {
+			width: 1200px;
+			margin: 20px auto;
+		}
+
+		#car {
+			width: 1200px;
+			margin: auto;
+		}
+
+		.car-title ul {
+			overflow: hidden;
+			line-height: 36px;
+			margin-top: 10px;
+		}
+
+		.car-title ul li {
+			float: left;
+			color: #969696;
+		}
+
+		.car-title ul li:nth-child(1) {
+			width: 202px;
+		}
+
+		.car-title ul li:nth-child(1) input {
+			vertical-align: text-bottom;
+			margin-right: 10px;
+		}
+
+		.car-title ul li:nth-child(2) {
+			width: 280px;
+		}
+
+		.car-title ul li:nth-child(3),
+		.car-title ul li:nth-child(4),
+		.car-title ul li:nth-child(5) {
+			width: 130px;
+			text-align: center;
+		}
+
+		.car-title ul li:nth-child(6) {
+			width: 70px;
+			text-align: center;
+		}
+
+		.car-store-title {
+			margin: 10px 0;
+		}
+
+		.car-store-title ul {
+			overflow: hidden;
+		}
+
+		.car-store-title ul li:nth-child(1) input {
+			vertical-align: middle;
+			margin: 0 10px;
+		}
+
+		.car-store-title ul li {
+			float: left;
+			line-height: 24px;
+		}
+
+		.car-store-logo {
+			width: 18px;
+			height: 18px;
+			display: block;
+			background: url(./img/icon_sprite.png) 0 -30px no-repeat;
+			margin: 3px 6px 0 0;
+		}
+
+		.car-store-txt {
+			font-size: 12px;
+			color: #323232;
+			font-weight: bold;
+		}
+
+		.car-store {
+			margin-bottom: 40px;
+		}
+
+		.car-table {
+			width: 100%;
+			border-collapse: collapse;
+			background-color: #fafafa;
+			border: 1px solid #ebebeb;
+		}
+
+		.car-table tr {
+			height: 120px;
+		}
+
+		.car-table tr td {
+			border-top: solid 1px #ebebeb;
+		}
+
+		.car-table tr td:nth-child(1) {
+			border-top: none;
+			vertical-align: middle;
+			width: 52px;
+		}
+
+		.car-table tr td:nth-child(1) input {
+			margin-left: 10px;
+		}
+
+		.car-table tr td:nth-child(2) {
+			width: 100px;
+			border-top: none;
+
+		}
+
+		.car-table tr td:nth-child(3) {
+			/*margin-right: -1px;*/
+			width: 336px;
+		}
+
+		.car-table tr td:nth-child(3) p {
+			padding-top: 17px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			height: 120px;
+			color: #323232;
+			;
+		}
+
+		.car-table tr td:nth-child(4) {
+
+			width: 132px;
+			text-align: center;
+			overflow: hidden;
+			padding-top: 15px;
+			color: #969696;
+			vertical-align: top;
+		}
+
+		.car-table tr td:nth-child(5) {
+
+			width: 132px;
+			vertical-align: top;
+			padding-top: 15px;
+			text-align: center;
+
+		}
+
+		.car-table tr td:nth-child(5) .amount {
+			width: 94px;
+			height: 28px;
+			margin: 5px auto;
+			font-size: 0;
+			border: 1px solid #dcdcdc;
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			user-select: none;
+		}
+
+		.car-table tr td:nth-child(5) .amount span:nth-child(1) {
+			display: inline-block;
+			width: 28px;
+			height: 100%;
+			vertical-align: bottom;
+			font-size: 14px;
+			text-align: center;
+			line-height: 28px;
+			cursor: pointer;
+		}
+
+		.car-table tr td:nth-child(5) .amount span:hover {
+			color: red;
+		}
+
+		.car-table tr td:nth-child(5) .amount input {
+			display: inline-block;
+			width: 38px;
+			height: 100%;
+			border: none;
+			vertical-align: bottom;
+			font-size: 14px;
+			font-weight: bold;
+			box-sizing: border-box;
+			border-left: solid 1px #dcdcdc;
+			border-right: solid 1px #dcdcdc;
+			text-align: center;
+			outline: none;
+		}
+
+		.car-table tr td:nth-child(5) .amount span:last-child {
+			display: inline-block;
+			width: 28px;
+			height: 100%;
+			vertical-align: bottom;
+			font-size: 14px;
+			text-align: center;
+			line-height: 28px;
+			cursor: pointer;
+
+		}
+
+		.car-table tr td:nth-child(6) {
+			width: 133px;
+			vertical-align: top;
+			padding-top: 15px;
+			text-align: center;
+			color: #323232;
+
+		}
+
+		.car-table tr td:nth-child(7) {
+			width: 72px;
+			vertical-align: top;
+			padding-top: 15px;
+			text-align: center;
+			color: #323232;
+			;
+		}
+
+		.car-table tr td:nth-child(7) span {
+			display: block;
+		}
+
+		.car-table tr td:nth-child(7) .delete {
+			cursor: pointer;
+		}
+
+		.car-book-img {
+			width: 80px;
+			height: 80px;
+		}
+
+		.car-book-img img {
+			width: 100%;
+			height: 100%;
+		}
+
+		.bar-wrapper {
+			width: 1200px;
+			height: 50px;
+			position: fixed;
+			bottom: -1px;
+			z-index: 99;
+			background: #e5e5e5;
+		}
+
+		.bar-wrapper .bar-right {
+			float: right;
+			color: #3c3c3c;
+		}
+
+		.bar-wrapper .bar-right .piece {
+			float: left;
+			min-width: 110px;
+			margin-right: 20px;
+			height: 50px;
+			line-height: 50px;
+		}
+
+		.bar-wrapper .bar-right .piece .piece_num {
+			display: inline-block;
+			padding: 0 10px;
+			font-weight: 700;
+			font-size: 18px;
+			font-family: tohoma, arial;
+		}
+
+		.bar-wrapper .bar-right .totalMoney {
+			float: left;
+			min-width: 100px;
+			height: 50px;
+			line-height: 50px;
+		}
+
+		.bar-wrapper .bar-right .totalMoney .total_text {
+			float: right;
+			font-weight: 400;
+			font-size: 20px;
+			font-family: Arial;
+			vertical-align: middle;
+			margin-right: 10px;
+			margin-left: 15px;
+		}
+
+		.bar-wrapper .bar-right .calBtn {
+			float: left;
+		}
+
+		.bar-wrapper .bar-right .calBtn a {
+			display: block;
+			width: 120px;
+			height: 50px;
+			color: #fff;
+			background: rgb(235, 94, 0);
+			/* cursor: not-allowed; */
+			font-size: 22px;
+			letter-spacing: 5px;
+			text-decoration: none;
+			line-height: 50px;
+			text-align: center;
+			border-radius: 2px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<span>xxx登录了</span>
+	</div>
+	<div class="container" id="car">
+		<div class="car-title">
+			<ul>
+				<li>
+					<input type="checkbox" name="all">全选
+				</li>
+				<li>商品信息</li>
+				<li>单价（元）</li>
+				<li>数量</li>
+				<li>金额（元）</li>
+				<li>操作</li>
+			</ul>
+		</div>
+		<div class="car-list"></div>
+		<div class="bar-wrapper">
+			<div class="bar-right">
+				<div class="totalMoney">共计: <strong class="total_text">￥0</strong></div>
+				<div class="calBtn"><a href="#" class="">结算</a></div>
+			</div>
+		</div>
+	</div>
+	<!--
+	1．cookie模拟登陆
+	2．LocalStroage 模拟数据
+	3．ES6编码
+	4．模块化 => cookie登陆验证
+			  => localStroage 数据
+	-->
+	<script>
+		function ShoppingCar(options) {
+			this.el = document.querySelector(options.el);
+			// 如果用户登录了 则渲染商品 否则不渲染
+			// if(this.getCookie('lt'))
+			this.init();
+		}
+
+		// 获取数据
+		ShoppingCar.prototype.getData = function () {
+			// 一般是发送ajax请求获取数据
+			let _this = this;
+			this.ajax({
+				method: "get",
+				url: "http://127.0.0.1/project/shopcar/server/getshopdata.php",
+				callback(data) {
+					//   console.log(data);
+					_this.data = JSON.parse(data);
+					_this.render();
+				}
+			})
+		};
+
+		// 初始化购物车
+		ShoppingCar.prototype.init = function () {
+			// 获取cookie 判断用户是否登录
+			this.getData();
+			this.event();
+		};
+
+		// 获取cookie
+		ShoppingCar.prototype.getCookie = function (name) {
+			let cookieStr = document.cookie;
+			let arr = cookieStr.split('; ');
+			for (let i = 0; i < arr.length; i++) {
+				if (arr[i].split('=')[0] === name)
+					return arr[i].split('=')[1];
+			}
+		};
+
+		// 渲染函数
+		ShoppingCar.prototype.render = function () {
+			this.el.innerHTML = this.renderStore();
+		};
+
+		// 渲染店铺
+		ShoppingCar.prototype.renderStore = function () {
+			let shopdata = this.data.data;
+			// console.log(shopdata);
+			return shopdata.map((ele) => {
+				return `<div class="car-store">
+				<div class="car-store-title">
+					<ul>
+						<li><input type="checkbox" class="store-input"></li>
+						<li><span class="car-store-logo"></span></li>
+						<li class="car-store-txt">NO5</li>
+					</ul>
+				</div>
+				<table class="car-table">
+						<tr class="tr" data-id="${ele.id}">
+						<td>
+							<input type="checkbox" class="check">
+						</td>
+						<td>
+							<div class="car-book-img"><img src="${ele.src}" alt=""></div>
+						</td>
+						<td>
+							<p>${ele.text}</p>
+						</td>
+						<td>
+							<span class="price">¥${ele.price}</span>
+						</td>
+						<td>
+							<div class="amount">
+								<span class="reduction">-</span>
+								<input type="text" value="1">
+								<span class="add">+</span>
+							</div>
+						</td>
+						<td>
+							<span class="all">¥${ele.price}</span>
+						</td>
+						<td>
+							<span>移入收藏</span>
+							<span class="delete">删除</span>
+						</td>
+					</tr>
+				</table>
+			</div>`;
+			}).join('');
+		};
+
+
+
+		// 事件绑定
+		ShoppingCar.prototype.event = function () {
+			this.el.onclick = (ev) => {
+				let target = ev.target,
+					className = target.className;
+				// 加减按钮
+				if (className === 'reduction' || className === 'add') {
+					this.num(target);
+				}
+				// 商品复选框
+				if (className === 'check') {
+					this.checkbox(target);
+				}
+				// 删除商品
+				if (className === 'delete') {
+					let isok = confirm('是否要移除该商品');
+					if (isok)
+						this.removeGoods(this.getParent(target, 'tr'));
+				}
+				// 店铺勾选框
+				if (className === 'store-input') {
+					this.selectStore(target);
+				}
+			};
+			// 点击全选按钮时
+			this.selectAll();
+		};
+
+		// 商品数量的加减
+		ShoppingCar.prototype.num = function (target) {
+			let className = target.className,
+				input, tr = this.getParent(target, 'tr');
+			if (className === 'reduction') {
+				input = target.nextElementSibling;
+				// 如果商品的数量为0的话选中移除商品
+				if (input.value <= 1) {
+					let isok = confirm('是否要移除该商品');
+					return isok ? this.removeGoods(tr) : '';
+				} else {
+					--input.value;
+				}
+			} else if (className === 'add') {
+				input = target.previousElementSibling;
+				input.value = ++input.value;
+			}
+			let check = tr.querySelector('[type="checkbox"]');
+			if (!check.checked) check.checked = true;
+			this.checkbox(check);
+		};
+
+		// 复选框联动
+		ShoppingCar.prototype.checkbox = function (check) {
+			// 获取当前点击元素所在的table内的所有复选框
+			let checkboxs = this.getParent(check, 'car-table').querySelectorAll('[type="checkbox"]');
+
+			// 判断当前点击商品的店铺商品是否全部选中
+			let arr = [...checkboxs].filter((item) => {
+				return item.checked === false;
+			});
+
+			// 获取当前店铺的复选框
+			let store = this.getParent(check, 'car-store').querySelector('.car-store-title [type="checkbox"]');
+			// 如果长度为0表示全部都选中了,大于0则表示有一些没有选择
+			store.checked = !arr.length;
+
+			// 获取所有店铺的复选框
+			let allStore = document.querySelectorAll('.car-store-title input');
+			let arr2 = [...allStore].filter(item => {
+				return item.checked === false;
+			})
+			// 获取全选复选框
+			let all = document.querySelector('.car-title input');
+			all.checked = !arr2.length;
+			this.sum(check);
+			this.sumPrice();
+		};
+
+		// 勾选店铺
+		ShoppingCar.prototype.selectStore = function (target) {
+			let allCheck = this.getParent(target, 'car-store').querySelectorAll('.check');
+			[...allCheck].forEach(item => {
+				item.checked = target.checked;
+				this.sum(item);
+			});
+			this.sumPrice();
+			// 获取所有店铺的复选框
+			let allStore = document.querySelectorAll('.car-store-title input');
+			let arr2 = [...allStore].filter(item => {
+				return item.checked === false;
+			});
+			// 获取全选复选框
+			let all = document.querySelector('.car-title input');
+			all.checked = !arr2.length;
+		}
+
+		// 全选
+		ShoppingCar.prototype.selectAll = function () {
+			let all = document.querySelector('.car-title input');
+			all.onclick = function () {
+				let isok = all.checked;
+				// 获取所有勾选框
+				let allCheck = document.querySelectorAll('.car-table .check');
+				[...allCheck].forEach(item => {
+					item.checked = isok;
+					this.sum(item);
+				});
+
+				let allStore = document.querySelectorAll('.car-store-title input');
+				[...allStore].forEach(item => {
+					item.checked = isok;
+				})
+				this.sumPrice();
+			}.bind(this);
+		}
+
+		// 获取元素的父元素 p为父元素的类名
+		ShoppingCar.prototype.getParent = function (el, p) {
+			for (;;) {
+				if (!el) {
+					return null;
+				} else {
+					if (el.parentNode.className === p) {
+						return el.parentNode;
+					} else {
+						el = el.parentNode;
+					}
+				}
+			}
+		};
+		// 计算单个商品的总价格
+		ShoppingCar.prototype.sum = function (check) {
+			let tr = this.getParent(check, 'tr');
+			let all = tr.querySelector('.all');
+			// 获取商品数量
+			let num = tr.querySelector('.amount input').value;
+			let price = tr.querySelector('.price').innerText.slice(1) * 100;
+			all.innerHTML = check.checked ? `￥${Math.round(price) * num/100}` : '￥0.00';
+		};
+
+		// 计算所有商品总价格
+		ShoppingCar.prototype.sumPrice = function () {
+			let sum = 0;
+			let all = document.querySelectorAll('.all');
+			[...all].forEach(item => {
+				sum += parseFloat(item.innerHTML.slice(1));
+			});
+			console.log(sum = sum.toFixed(2))
+			return sum;
+		}
+		// 当商品数量小于0或者用户点击确认删除
+		ShoppingCar.prototype.removeGoods = function (tr) {
+			// 获取当前的表单的tbody
+			let table = this.getParent(tr, 'car-table').querySelector('tbody');
+			table.removeChild(tr);
+			this.sumPrice();
+			// 如果当前店铺的所有商品已经移除那么要删除店铺名
+			if (!table.children.length) this.el.removeChild(this.getParent(table, 'car-store'));
+		}
+		// 发送ajax请求
+		ShoppingCar.prototype.ajax = function (option) {
+			var xhr = null;
+			var str = ''
+			if (window.XMLHttpRequest) {
+				xhr = new XMLHttpRequest();
+			} else {
+				xhr = new ActiveXObject('Microsoft.XMLHTTP');
+			}
+			if (option.data) {
+				for (var key in option.data)
+					str += key + '=' + option.data[key] + '&'
+			}
+			if (option.method.toLowerCase() === 'get') {
+				if (option.data) str = '?' + str;
+				xhr.open('GET', option.url + str, true);
+				xhr.send();
+			}
+			if (option.method.toLowerCase() === 'post') {
+				str = option.data ? str.slice(0, -1) : null;
+				xhr.open('POST', option.url, true);
+				xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				xhr.send(str);
+			}
+			xhr.onreadystatechange = function () {
+				if (xhr.readyState == 4 && xhr.status == 200) {
+					var data = xhr.responseText;
+					option.callback(data);
+				}
+			}
+		}
+		
+		let sumnum = ShoppingCar.prototype.sumPrice
+		// console.log(sumnum);
+		// console.log($(".total_text"));
+		// console.log($("input"));
+		$("input").click(function(){
+			$(".total_text").text(ShoppingCar.prototype.sumPrice)
+		})
+		
+		let car = new ShoppingCar({
+			el: ".car-list"
+		})
+		
+		// let deltext = $(".delete").parent();
+			
+
+			
+		$(".delete").click(function(){
+			let deltext = $(".delete").parents("p");
+			// console.log(deltext);
+			$.ajax({
+				type: "get",
+				url: "http://127.0.0.1/project/shopcar/server/dele.php",
+				data: `text`,
+				dataType: "dataType",
+				success: function (response) {
+					
+				}
+			});
+			
+		})
+	</script>
+</body>
+
+</html>

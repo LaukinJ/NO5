@@ -28,9 +28,9 @@ img {
     display: block;
 }
 
-.jqzoom img {
+/* .jqzoom img {
     background: url(http://www.lanrenzhijia.com/demo/images/loading.gif) no-repeat center center;
-}
+} */
 
 .zoomdiv {
     z-index: 100;
