@@ -14,8 +14,8 @@ $(function () {
                     return `
                     <ul class="order_lists">
                     <li class="list_chk">
-                        <input type="checkbox" id="checkbox_2" class="son_check">
-                        <label for="checkbox_2"></label>
+                        <input type="checkbox" id="checkbox_${ele.id}" class="son_check">
+                        <label for="checkbox_${ele.id}"></label>
                     </li>
                     <li class="list_con">
                         <div class="list_img"><a href="javascript:;"><img src="${ele.src}" alt=""></a></div>
@@ -53,7 +53,7 @@ $(function () {
             $wholeChexbox = $('.whole_check'),
             $cartBox = $('.cartBox'), //每个商铺盒子
             $shopCheckbox = $('.shopChoice'), //每个商铺的checkbox
-            $          = $('.son_check'); //每个商铺下的商品的checkbox
+            $sonCheckBox = $('.son_check'); //每个商铺下的商品的checkbox
         $allCheckbox.click(function () {
             if ($(this).is(':checked')) {
                 $(this).next('label').addClass('mark');
@@ -75,9 +75,8 @@ $(function () {
             }
             totalMoney();
         });
-
-
-        $sonCheckBox.each(function () {
+        
+        $sonCheckBox.each(function (item, i) {
             $(this).click(function () {
                 if ($(this).is(':checked')) {
                     //判断：所有单个商品是否勾选
